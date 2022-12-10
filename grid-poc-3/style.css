@@ -1,0 +1,53 @@
+body {
+  background-color: aliceblue;
+}
+
+.grid-container {
+  display: grid;
+  height: 90vh;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 10% 10% 80%;
+}
+
+.grid-item {
+  margin: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: cursive;
+  box-shadow: 4px 4px 10px rgba(103, 103, 103, 0.628);
+  border-radius: 0.5rem;
+}
+
+.header {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-color: orange;
+}
+
+.search {
+  background-color: rgba(47, 214, 47, 0.475);
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.left-sidebar {
+  background-color: rgba(207, 92, 92, 0.792);
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+
+.right-sidebar {
+  background-color: rgb(85, 158, 206);
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.middle-column {
+  background-color: rgba(125, 69, 177, 0.475);
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
